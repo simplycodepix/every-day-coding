@@ -1,0 +1,112 @@
+@media all and (max-width: 1020px)
+	ul.io-social_list
+		display: flex
+		align-items: center
+		justify-content: center
+
+
+@media all and (max-width: 700px)
+
+	section#home.io-slider
+		height: 320px
+		padding: 0 10px
+
+	article.io-top_article
+		h2.io-top_article__title
+			font-size: 36px
+	
+	article#single.io-single_article .io-single_thumbnail
+		width: 100%
+		height: 280px
+
+	article.io-article
+		flex-flow: column
+		.io-article_content
+			width: 100%
+		.io-article_excerpt
+			width: 100%
+			text-align: center
+		.io-article_thumb
+			height: 200px
+
+	article.io-article:nth-child(even)
+		.io-article_meta
+			order: 2
+		.io-article_content
+			order: 1
+		.io-article_excerpt
+			text-align: center
+
+	.io-article_meta
+		width: 100%
+		flex-flow: row
+		align-items: center
+		padding: 0 10px 15px
+		height: 120px
+		padding-bottom: 15px
+		.io-article_day
+			width: 80px
+			height: 80px
+			line-height: 80px
+			margin: 0 15px
+
+	.io-contact_content
+		flex-flow: column
+		.io-contact_panel, .io-contact_meta
+			width: 100%	
+			text-align: center
+		
+		.io-contact_panel
+			order: 2
+
+		.io-contact_meta
+			padding-top: 30px
+			order: 1
+			h2
+				display: none
+
+	.io-about_article
+		flex-flow: column
+		&__content
+			width: 100%
+
+		.io-about_skills
+			width: 100%
+			display: flex
+			justify-content: space-between
+			padding: 40px
+			flex-flow: wrap
+
+	article#single.io-single_article
+		.io-single__content
+			font-size: 16px
+			line-height: 1.8
+
+
+
+	.io-comment
+		&_author
+			&__thumb
+				width: 75px
+				height: 75px
+			&__name a
+				color: $black
+				font: 
+					size: 16px
+					weight: 700
+		&_meta
+			&__date a
+				font:
+					size: 10px
+			&__reply a
+				font-size: 12px
+		&_content
+			font:
+				size: 12px
+
+
+
+
+@media all and (max-width: 600px)
+	section#home.io-slider
+		height: 380px
