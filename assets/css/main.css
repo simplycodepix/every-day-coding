@@ -6,6 +6,7 @@
  *    user zoom.
  */
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,700|Capriola|Open+Sans:400,600,700&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -1297,3 +1298,104 @@ section#frontpage.io-front_screens {
 @media all and (max-width: 600px) {
   section#home.io-slider {
     height: 380px; } }
+
+.hh-login {
+  background: #2980b9;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff; }
+  .hh-login--content {
+    width: 350px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .hh-login--header {
+    margin-bottom: 40px;
+    text-align: center; }
+  .hh-login--body {
+    width: 100%; }
+  .hh-login--logo {
+    margin-bottom: 20px; }
+    .hh-login--logo img {
+      max-width: 50%; }
+  .hh-login--text {
+    font-size: 24px;
+    font-weight: 300; }
+  .hh-login--group {
+    margin-bottom: 25px;
+    text-aling: center;
+    width: 100%; }
+    .hh-login--group:last-child {
+      margin-bottom: 15px; }
+    .hh-login--group input {
+      width: 100%;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      border-radius: 2px;
+      height: 40px;
+      background: rgba(0, 0, 0, 0.1);
+      color: #fff;
+      padding-left: 15px;
+      -webkit-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s;
+      position: relative; }
+      .hh-login--group input::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.8); }
+      .hh-login--group input::-moz-placeholder {
+        color: rgba(255, 255, 255, 0.8); }
+      .hh-login--group input:-moz-placeholder {
+        color: rgba(255, 255, 255, 0.8); }
+      .hh-login--group input:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.8); }
+      .hh-login--group input:focus {
+        outline: none;
+        border: 1px solid #fff; }
+    .hh-login--group a {
+      font-size: 12px;
+      font-weight: 600;
+      display: block;
+      color: #fff;
+      margin: 0 auto;
+      text-align: center; }
+    .hh-login--group button {
+      width: 200px;
+      height: 40px;
+      background: #2ecc71;
+      border: none;
+      margin: 30px auto 0;
+      display: block;
+      -webkit-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+      .hh-login--group button:hover {
+        background: #3bd37c; }
+  .hh-login--footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 40px;
+    border-top: 2px solid rgba(255, 255, 255, 0.5); }
+    .hh-login--footer a {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 13px; }
+      .hh-login--footer a:hover {
+        color: #fff; }
