@@ -1399,3 +1399,85 @@ section#frontpage.io-front_screens {
       font-size: 13px; }
       .hh-login--footer a:hover {
         color: #fff; }
+
+.ca-container {
+  background: #ecf0f1;
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.ca-card {
+  width: 330px;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 35px rgba(0, 0, 0, 0.2), 0 15px 35px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative; }
+  .ca-card--thumb {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: top center; }
+  .ca-card--meta {
+    position: absolute;
+    z-index: 3;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    top: 50%;
+    margin-left: -100px;
+    left: 50%; }
+  .ca-card--icon, .ca-card--rate {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 0 1px 45px rgba(0, 0, 0, 0.5); }
+  .ca-card--icon {
+    background: #111111;
+    font-size: 24px;
+    color: #fff;
+    margin-top: -20px;
+    margin-right: -20px;
+    z-index: 2; }
+  .ca-card--rate {
+    background: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000; }
+  .ca-card--bg {
+    -webkit-transform: rotate(-13deg);
+            transform: rotate(-13deg);
+    background: #fff;
+    width: 200%;
+    position: absolute;
+    bottom: -20px;
+    left: -30px;
+    right: 0;
+    height: 300px; }
+  .ca-card--content {
+    width: 100%;
+    padding: 0 20px 40px;
+    position: relative;
+    z-index: 2;
+    text-align: center; }
+  .ca-card--title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000; }
+  .ca-card--desc {
+    font-size: 13px;
+    font-weight: 600; }

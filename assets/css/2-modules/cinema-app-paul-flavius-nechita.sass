@@ -1,0 +1,79 @@
+.ca-container
+    background: #ecf0f1
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+
+.ca-card
+    width: 330px
+    background-color: $white
+    margin: 0 auto
+    border-radius: 4px
+    box-shadow: 0 4px 35px rgba(0,0,0,0.2), 0 15px 35px rgba(0,0,0,0.1)
+    overflow: hidden
+    position: relative
+    
+    &--thumb
+        width: 100%
+        height: 400px
+        background: 
+            size: cover
+            position: top center
+    
+    &--meta
+        position: absolute
+        z-index: 3
+        display: flex
+        top: 50%
+        margin-left: -100px
+        left: 50%
+
+    &--icon, &--rate
+        width: 100px
+        height: 100px
+        text-align: center
+        line-height: 100px
+        box-shadow: 0 1px 45px rgba(0,0,0,0.5)
+
+
+    &--icon
+        background: $black
+        font-size: 24px
+        color: $white
+        margin-top: -20px
+        margin-right: -20px
+        z-index: 2
+
+    &--rate
+        background: $white
+        font-size: 18px
+        font-weight: 600
+        color: #000
+
+    &--bg
+        transform: rotate(-13deg)
+        background: $white
+        width: 200%
+        position: absolute
+        bottom: -20px
+        left: -30px
+        right: 0
+        height: 300px
+
+    &--content
+        width: 100%
+        padding: 0 20px 40px
+        position: relative
+        z-index: 2
+        text-align: center
+
+    &--title
+        font-size: 24px
+        font-weight: 600
+        margin-bottom: 15px
+        color: #000
+
+    &--desc
+        font-size: 13px
+        font-weight: 600
