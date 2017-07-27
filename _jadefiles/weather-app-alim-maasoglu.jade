@@ -1,0 +1,53 @@
+mixin card(status, deg, desc, bg)
+    .wa-weather--card(style=bg)
+        .wa-card--top
+            .wa-card--status=status
+            .wa-card--deg
+                span.number=deg
+                span.circle
+            .wa-card--desc=desc
+        .wa-card--bottom
+            a(href="#") Details
+
+.wa-wrapper
+    header.wa-header
+        .wa-container
+            .wa-header--logo
+                span B
+            nav.wa-header--nav
+                ul.wa-header--list
+                    li: a(href="#") Today
+                    li: a(href="#") Portrait
+                    li: a(href="#") Map
+                    li: a(href="#") Write
+                    li: a(href="#") Reference
+                    li: a(href="#") Directory
+            .wa-header--dash: span
+    .wa-content
+        .wa-container
+            .wa-content--weather
+                .wa-content--container
+                    .wa-weather--meta
+                        .wa-weather--date 9. July 2016
+                        .wa-weather--city Stockholm
+                        .wa-weather--country Sweden
+                    .wa-weather--cards
+                        +card("Now", "13", "partly cloudy", "background-image: url(http://img09.deviantart.net/958b/i/2011/146/2/7/cloudy_weather_by_enricotasca-d3h979v.jpg)")
+                        +card("Later", "21", "sunny", "background-image: url(https://cdn.agriland.ie/uploads/2016/03/epic-sunset-part-2-1024x662.jpg)")
+                        +card("tomorrow", "21", "sunny", "background-image: url(https://cdn.agriland.ie/uploads/2016/03/epic-sunset-part-2-1024x662.jpg)")
+
+        .wa-author--container
+            .wa-author--content
+                .wa-author--thumb
+                .wa-author--name Matthew McConaughey
+                .wa-author--text Matthew McConaughey is an American actor known for roles in films like Dazed and Confused and Dallas Buyers Club.
+                .wa-author--tags
+                    span #social
+                    span #correspodence
+                    span #firstperson
+                    span #english
+                    span #danish
+                    span #thirdperson
+                .wa-profile--link
+                    a(href="#") profile
+
