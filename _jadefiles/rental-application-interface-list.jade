@@ -1,0 +1,41 @@
+mixin card(thumb, location, title, desc, price)
+    .ra-card
+
+        .ra-card--top
+            .ra-card--left
+                .ra-card--thumb(style=thumb)
+            .ra-card--right
+                .ra-card--title=title
+                .ra-card--desc=desc
+        .ra-card--bottom
+            .ra-card--left
+                .ra-card--location
+                    i.fa.fa-map-marker
+                    span=location
+            .ra-card--right
+                .ra-card--price
+                    span.price=price
+                    span.period / month
+
+
+.ra-wrapper
+    .ra-panel
+        .ra-panel--top
+            .ra-menu--trigger
+                span.line
+                span.line2
+                span.line3
+            .ra-search--trigger
+                i.fa.fa-search
+        .ra-panel--content
+            .ra-cards--list
+                +card("background-image: url(http://rcysl.com/wp-content/uploads/2017/02/Minimal-Wallpapers-For-Background-.jpg)", "128 High-tech Park", "White Cabin", "Lorem ipsum dolor eat sad consectetur elit tempor", "$2300 ")
+                +card("background-image: url(http://www.yankodesign.com/images/design_news/2015/09/lifestyle/lifestyle_01.jpg)", "The National Geological Park", "Forest Villa", "Lorem ipsum dolor eat sad consectetur elit tempor", "$2600 ")
+                +card("background-image: url(http://68.media.tumblr.com/047d202fea3a82f753b2242f20443c20/tumblr_nl23ddJ78C1uphk6yo2_r2_1280.jpg)", "128 High-tech Park", "Lake House", "Lorem ipsum dolor eat sad consectetur elit tempor", "$2800 ")
+
+        .ra-panel--bottom
+            nav.ra-bottom--nav
+                ul.ra-nav--list
+                    li: a(href="#"): i.fa.fa-filter
+                    li: a(href="#"): i.fa.fa-map-marker
+                    li: a(href="#").active: i.fa.fa-bars
