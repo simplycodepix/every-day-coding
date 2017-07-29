@@ -1,0 +1,143 @@
+.su-wrapper
+    background: #e74c3c
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    
+.su-panel
+    width: 920px
+    display: flex
+    height: 600px
+    overflow: hidden
+    border-radius: 4px
+    box-shadow: 0 5px 35px 1px rgba(0,0,0,0.3)
+    background: #34495e
+    background: linear-gradient(to bottom, #34495e, #2c3e50)
+    &--half
+        width: 50%
+        padding: 10px 20px
+        height: 100%
+    &--left
+        background:
+            size: cover
+            position: center center
+            repeat: no-repeat
+            image: url(http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/06/forest-patrol.jpg)
+    &--right
+        position: relative
+        display: flex
+        flex-flow: column
+        justify-content: center
+    &--logo
+        font-size: 24px
+        line-height: 1
+        color: #34495e
+    &--title
+        margin-top: 60px
+        text-align: center
+        color: #34495e
+        font:
+            size: 18px
+    &--top
+        display: flex
+        width: 100%
+        justify-content: flex-end
+
+    &--content
+        .su-panel--title
+            color: $white
+            margin-top: 0
+            margin-bottom: 40px
+            text-align: left
+            padding-left: 40px
+            font-weight: 700
+            font-size: 24px
+            color: rgba(255,255,255,0.4) 
+.su-sign--toggle
+    display: flex
+    position: absolute
+    top: 15px
+    right: 20px
+    list-style: none
+    border-radius: 25px
+    overflow: hidden
+    li
+        width: 75px
+        background: rgba(255,255,255,0.2)
+        color: rgba(255,255,255,0.5)
+        cursor: pointer
+        font:
+            size: 12px
+            weight: 600
+        padding: 6px 0
+        text-align: center
+        +transition
+        &:hover
+            background: rgba(0,0,0,0.4)
+        &.active
+            color: $white
+            background: #2ecc71
+            background: linear-gradient(to bottom, $lime, #2ecc71)
+        
+
+.su-form--group
+    margin-bottom: 30px
+    padding: 0 40px
+    &:last-child
+        margin-bottom: 0
+    label
+        display: block
+        text-transform: uppercase
+        color: rgba(255,255,255,0.8)
+        font-size: 13px
+    input
+        width: 100%
+        font-size: 13px
+        background: transparent
+        padding: 5px 0 7px
+        border: none
+        color: $white
+        +transition
+        border-bottom: 1px solid rgba(255,255,255,0.6)
+        &:focus
+            outline: none
+            border-bottom: 1px solid $white
+    button
+        width: 140px
+        padding: 8px 0
+        margin-right: 20px
+        font-weight: 600
+        font-size: 13px
+        color: $white
+        background: linear-gradient(to bottom, $lime, #2ecc71) 
+        border-radius: 25px
+        box-shadow: 0 3px 15px rgba(0,0,0,0.5)
+        border: none
+    a
+        font-size: 13px
+        +transition
+        color: rgba(255,255,255,0.8)
+        border-bottom: 1px solid rgba(255,255,255,0.8)
+        &:hover
+            border-bottom: 1px solid $white
+            color: $white
+    &.su-statements
+        display: flex
+        font-size: 13px
+        align-items: center
+        color: rgba(255,255,255,0.4)
+        input
+            width: inherit
+            margin-right: 5px
+        a
+            margin-left: 5px
+    &.su-sign--btn
+        margin-top: 50px
+        a
+            color: rgba(255,255,255,0.3)
+            border-bottom: 1px solid rgba(255,255,255,0.3)
+            &:hover
+                color: $white
+                border-bottom: 1px solid $white
+            
