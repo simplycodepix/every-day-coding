@@ -1,0 +1,107 @@
+.spinner
+    position: relative
+    animation: sk-bouncedelay 0.6s infinite linear
+    width: 230px
+    height: 230px
+    &-wrapper
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100vh
+    &-part
+        display: flex
+        flex-flow: column
+        position: absolute
+        align-items: center
+        &--bottom
+            bottom: 0
+            left: 50% 
+            margin-left: -35px
+            .spinner-line
+                margin-top: 0
+                margin-bottom: -20px
+        &--right
+            top: 50%
+            right: 0
+            margin-right: 10px
+            margin-top: -53px
+            transform: rotate(90deg)
+        &--left
+            top: 50%
+            margin-left: 10px
+            margin-top: -53px
+            left: 0
+            transform: rotate(-90deg)
+        &--top
+            top: 0
+            left: 50%
+            margin-left: -35px
+    &-circle
+        width: 70px
+        height: 70px
+        background: $fuchsia
+        z-index: 2
+        animation: color-change 2s infinite linear
+        box-shadow: 0 0 10px 1px rgba(0,0,0,0.5) 
+        border-radius: 50%
+        position: relative
+        &:after
+            content: ''
+            display: block
+            width: 40px
+            height: 40px
+            box-shadow: 0 0 0 2px $silver, 0 0 0 6px $muted
+            position: absolute
+            top: 50%
+            margin-top: -20px
+            left: 50%
+            margin-left: -20px
+            border-radius: 50%
+            animation: circle-color-after 2s infinite linear
+    &-line
+        width: 40px
+        height: 60px
+        box-shadow: 0 0 5px rgba(0,0,0,0.6)
+        margin-top: -20px
+        border-radius: 15px
+        background: $olive
+
+.center-circle
+    position: absolute
+    top: 50%
+    z-index: 2
+    box-shadow: 0 0 15px rgba(0,0,0,0.5) 
+    left: 50%
+    margin-left: -35px
+    margin-top: -35px
+
+
+@keyframes circle-color-after
+    0%
+        box-shadow: 0 0 0 2px $silver, 0 0 0 6px $muted
+    25%
+        box-shadow: 0 0 0 2px $aqua, 0 0 0 6px $blue
+    50%
+        box-shadow: 0 0 0 2px $orange, 0 0 0 6px $red
+    75%
+        box-shadow: 0 0 0 2px $lime, 0 0 0 6px $green
+    100%
+        box-shadow: 0 0 0 2px $silver, 0 0 0 6px $muted
+
+@keyframes color-change
+    0%
+        background: $olive
+    25%
+        background: $orange
+    50%
+        background: $green
+    75%
+        background: $red
+    100%
+        background: $olive
+
+@keyframes sk-bouncedelay 
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
