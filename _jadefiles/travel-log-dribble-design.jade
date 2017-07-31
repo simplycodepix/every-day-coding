@@ -1,0 +1,52 @@
+mixin card
+    .tl-card
+        .tl-card--left
+            .tl-card--thumb
+        .tl-card--right
+            .tl-card--header
+                .tl-card--user
+                    .tl-card--user__name Annabelle
+                    .tl-card--user__quoute It is never too late to learn
+                .tl-card--plus
+                    i.fa.fa-plus
+            .tl-card--content
+                a(href="#").tl-card--excerpt Hangzhou is a suitable place to live, a beautiful environment
+            .tl-card--footer
+                span.number 3,256
+                span People Reading
+
+.tl-wrapper
+    .tl-panel
+        .tl-panel--top
+            .tl-panel--header
+                .tl-nav--toggle
+                    span.toggle-line.toggle-line-1
+                    span.toggle-line.toggle-line-2
+                    span.toggle-line.toggle-line-3
+                .tl-header--title Travle Log
+                .tl-search--toggle
+                    i.fa.fa-search
+            ul.tl-panel--categories
+                li: a(href="#").active Dynamic
+                li: a(href="#") Attention
+                li: a(href="#") Subscription
+        .tl-panel--content
+            .tl-panel--cards
+                .tl-featured--card
+                    .tl-fc--top
+                        a(href="#").tl-fc--title Open Yours dream of the Trip
+                    .tl-fc--bottom
+                        .tl-fc--cat
+                            span Romantic
+                            span City
+                            span Travel
+                            span Plan
+                        .tl-fc--year 2017
+                +card
+                +card
+        .tl-panel--bottom
+            nav.tl-panel--nav
+                ul.tl-panel--list
+                    li: a(href="#"): i.fa.fa-home
+                    li: a(href="#"): i.fa.fa-pencil
+                    li: a(href="#"): i.fa.fa-user 

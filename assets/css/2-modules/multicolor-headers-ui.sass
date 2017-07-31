@@ -1,0 +1,74 @@
+.mc-wrapper
+    background: #c0392b
+    min-height: 100%
+    
+
+.mc-headers
+    max-width: 1170px
+    margin: 0 auto
+    padding-top: 50px
+
+.mc-h--logo
+    text-align: center
+    cursor: pointer
+    
+    p
+        font-size: 10px
+        line-height: 1
+        color: $red    
+    span
+        text-transform: uppercase
+        font-size: 18px
+        color: $black
+        font-weight: 700
+
+.mc-b
+    &--header
+        background: $white
+    &--top
+        position: relative 
+        height: 60px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        border-bottom: 1px solid $muted
+        .mc-h--logo
+            position: absolute
+            left: 50%
+            width: 120px
+            margin-left: -60px
+    &--bottom .mc-nav--list
+        justify-content: center
+        height: 45px
+        li a
+            color: $black
+            padding: 0 10px
+            font-weight: 600
+            font-size: 13px
+    &--social
+        display: flex
+        list-style: none
+        height: 60px
+        line-height: 60px
+        li a
+            width: 60px
+            border-left: 1px solid $muted
+            text-align: center
+            color: $muted
+            font-size: 18px
+    
+
+.mc-nav--list
+    display: flex
+    list-style-type: none
+    align-items: center
+
+.mc-nav--toggle
+    width: 60px
+    height: 60px
+    line-height: 60px
+    text-align: center
+    color: $red
+    border-right: 1px solid $muted
+    cursor: pointer
+    font-size: 16px
