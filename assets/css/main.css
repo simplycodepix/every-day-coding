@@ -2376,11 +2376,20 @@ section#frontpage.io-front_screens {
       text-align: right;
       font-size: 18px; }
     .tl-panel--header .tl-nav--toggle {
-      cursor: pointer; }
+      cursor: pointer;
+      width: 20px; }
+      .tl-panel--header .tl-nav--toggle:hover .toggle-line-1 {
+        width: 15px; }
+      .tl-panel--header .tl-nav--toggle:hover .toggle-line-2 {
+        width: 20px; }
+      .tl-panel--header .tl-nav--toggle:hover .toggle-line-3 {
+        width: 10px; }
       .tl-panel--header .tl-nav--toggle .toggle-line {
         height: 2px;
         background: #fff;
         display: block;
+        -webkit-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s;
         margin-bottom: 5px; }
         .tl-panel--header .tl-nav--toggle .toggle-line:last-child {
           margin-bottom: 0; }
@@ -2413,6 +2422,7 @@ section#frontpage.io-front_screens {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     -webkit-flex-flow: column;
         -ms-flex-flow: column;
             flex-flow: column;
@@ -2498,4 +2508,74 @@ section#frontpage.io-front_screens {
     padding: 0 20px; }
     .tl-panel--list li a {
       line-height: 50px;
-      font-size: 21px; }
+      font-size: 21px;
+      color: rgba(0, 0, 0, 0.2); }
+      .tl-panel--list li a:hover, .tl-panel--list li a.active {
+        color: #0074D9; }
+
+.tl-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 170px;
+  padding: 20px 10px 0 5px;
+  background: #fff;
+  margin-top: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 5px; }
+  .tl-card--left {
+    width: 70px; }
+  .tl-card--thumb {
+    width: 60px;
+    margin: 0 auto;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(https://s3.favim.com/orig/47/beautiful-cool-cute-fashion-girl-Favim.com-432821.jpg); }
+  .tl-card--right {
+    padding-left: 10px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
+  .tl-card--header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 10px; }
+  .tl-card--user__name {
+    color: #3498db;
+    font-size: 15px;
+    font-weight: 600; }
+  .tl-card--user__quoute {
+    color: #d0d0d0;
+    font-size: 12px; }
+  .tl-card--plus {
+    background: transparent;
+    color: #3d9cdd;
+    border: 1px solid #3d9cdd;
+    border-radius: 25px;
+    width: 43px;
+    text-align: center;
+    cursor: pointer;
+    height: 25px; }
+    .tl-card--plus i {
+      line-height: 25px; }
+  .tl-card--content {
+    margin-bottom: 15px; }
+    .tl-card--content a {
+      color: #3498db; }
+  .tl-card--footer {
+    font-size: 12px;
+    color: #aaaaaa; }
+    .tl-card--footer span.number {
+      margin-right: 5px; }
