@@ -1,0 +1,90 @@
+.li-wrapper
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    background: 
+        size: cover
+        position: center center
+        image: url(https://static1.squarespace.com/static/5745fff159827edece35ed0c/t/574931ac1bbee0675b437eb4/1464424470904/)
+    &:after
+        content: ''
+        position: absolute
+        top: 0
+        display: block
+        left: 0
+        right: 0
+        bottom: 0
+        background: rgba(255,255,255,0.15)
+
+
+.li-panel
+    position: relative
+    z-index: 2
+    display: flex
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,0.5)
+    width: 900px
+    height: 350px
+    padding: 0 40px
+    background: rgba(0,0,0,0.65)
+    &--left
+        width: 50%
+        color: $silver
+        display: flex
+        padding-left: 10px
+        flex-flow: column
+        justify-content: center
+        height: 100%
+        padding-right: 100px
+        background: transparent
+        .li-panel--title
+            width: 60%
+            margin-bottom: 5px
+            color: $silver
+        p
+            font-size: 13px
+        .li-sign-up
+            display: block
+            border: 1px solid $silver
+            color: $silver
+            border-radius: 5px
+            text-transform: uppercase
+            margin-top: 30px
+            width: 140px
+            text-align: center
+            padding: 7px 0
+    &--right
+        width: 50%
+        margin: -30px 0
+        padding: 50px 40px
+        box-shadow: 0 1px 5px 1px rgba(0,0,0,0.4)
+        background: lighten($silver, 10%)
+        h2 
+            text-transform: uppercase
+            font-size: 24px
+            color: $orange
+            margin-bottom: 20px
+    &--title
+        font-size: 27px
+        line-height: 1.2
+        font-weight: 500
+        color: $white
+
+.li
+    &-form
+        &--group
+            margin-bottom: 15px
+            input
+                width: 100%
+                border: none
+                padding: 10px 0
+                border-bottom: 1px solid $muted
+                background: transparent
+                text-transform: capitalize
+                +placeholder
+                    color: $muted
+                &:focus
+                    outline: none
+        &--bottom
+    &-submit--btn
